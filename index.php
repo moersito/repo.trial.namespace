@@ -1,30 +1,42 @@
------BEGIN RSA PRIVATE KEY-----
-Proc-Type: 4,ENCRYPTED
-DEK-Info: DES-EDE3-CBC,F423BC3BE8F6F902
+<?php
 
-qormr762izHIyQ1nO3jTgAP1Xf59ryrKuErx2vdlLHQfa+I8TwGgNiGhnM0Gjdeo
-h3m2GJhwyfIApyvX7ShKWlJmZSGiSlXYRLbHYyppddSTCs/3sNGN2EsumoUngT0f
-XZ4bRlT6ll5sT1pTwcPWaCgHOES4VXZvDVF6v+I4sI6qTWk8sKdf6EiJmN+zirYs
-eV4mQhj9ginzroYeLYxcqvWSeYyDlLI6AGDnGuaReyNV2TLaoEEekfSDb+uqgN4p
-fdKKlO1hrtHyTzhyyjlqrg1c7L2CqHryLSzW8Fnpi08t0UpvaQEjr0H5TClyxV1J
-xPYhFErVcFqORKODYBIPtJ9l4mfqDH3j4UUsy97i9+S1z9aD2WTT/X264Ldnb5J4
-moSVrrNdZGa6xiwhboalbAZ/oDxw0jckn9Mp7IyRo5a1Je5xB1YJ2vmqZJlJlIuJ
-rzBm/FtejVEXVRcyaaF/HUbsU0IG4ujjn0S6lUfdydyMH9KTcJaT47BsTselqZtx
-drAgyeLeozpuW9Zox2OKEMkvn2TNSeIfCh/GX+70JeKeCe5W7/y9G4oAvf7pLwg9
-KYNc8fJMfoji7q/5wlCVxHOGlY8zW8bieRwekawUJKQbdp89YVgDmB+FS5cHKidO
-lY4psAo1xwgiBoUKKa5YhHWfnAxIJNfdAsurOCjieV9aWkUho0H86bfRYfT17eug
-gYYQxUH81cZZ02JhatdzwNng7QtpEd/d4cSMytVVN63GKOPO9j/87+60oLELvcd8
-PJ6ZyjFOx2mXu5pf/UE3+l2AtKHsNPK/DxP3mi43fSB4H85f54HxflpNuUnAKg3j
-BvYfo63Qmq5NYYPTPrp6vguTCQbCY8SMqoM17ntI++WhDBufkVxnnTmrchysT/5V
-NhSwJfd82GZqPjNLhlaamBE5upo/KvBt2EI5UJsUQAiV6gdbblbTpMw77i2UaVBZ
-sIxY0mM8afb+3fD25adH+XEwSPjScej9So/PD4fnhPIqJ6WoJ3aMREL7ZPeGdtlm
-EudErZlUCJA5cvEthXyIHDuQ4tuDeMTQX5h93gqg0K9s8EM5K28TqI5E5n7L6Z3Y
-+RlJTR22Lx/BGjobThVbYulwXy2eoobuvpYLS5IftXUFnMxSyyYo6iFy3ZqvXe90
-eOAJULGgF1jmjxpj3KSSSJxUZobvEbJUAUwvbLV6bQC/sGIyuWoXQXFgm4LmDP3c
-P7IFECrPB+MuBivB/6giSb1icg++r+zlkms3G5QNygBqtKKuCqjEeWMuyOvj8jpY
-dCbbtdmo47IXFfx6D4t8Uji71BAqU5vSO4nPiGjOJ8EvBahUe5Z/vvskzQ673ttU
-6R1zyC1X55i+aM1NLBHqX3SDmZXgYe8W+uX3d0A0hy9anXe08uzB4uj86Vi4tH+8
-3rYef1vM1P/vYW4jwNpxGwePRN1Fei/GJDwroligpMC0HUWyk6NXyZNODKi3W0YE
-wttT4Os84WhAX/h5nVLQ3EuGpe8F6UfGFy1BZdvOQ2Me/QXGEgpUvjiAtFx1dJzV
-1nBLihCc0J4ODort9zAkC51bsa/tPYTQwp3bnN0v0D1LQM5IWutIzg==
------END RSA PRIVATE KEY-----
+#[AKSES CLASS DARI `NAMESPACE` DENGAN CARA 'QUALIFIED NAME']
+
+// Call Other File
+require_once '/Database/Connection.php';
+
+// Instance Object Usage Namespace
+$conn = new Database\Connection;
+
+// Printing & Access
+print $conn::tampil();
+print '<br/>';
+print $conn->see();
+
+#[END]
+
+print '<br/><br/>';
+
+// Call Other File
+require_once '/Blog/Dashboard.php';
+
+print '<br/><br/>';
+
+// Call Other File
+require_once 'FullyQualifiedName.php';
+
+print '<br/><br/>';
+
+// Call Other File
+require_once 'Controller/BingungNamanya.php';
+
+print '<br/><br/>';
+
+// Call Other File
+require_once 'Controller/ApalagiNamanya.php';
+
+$foo = new Controller\ApalagiNamanya();
+
+print $foo->read();
+
+
